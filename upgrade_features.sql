@@ -1,2 +1,0 @@
-ALTER TABLE scholarships ADD COLUMN deadline DATE NULL, ADD COLUMN documents TEXT NULL;
-CREATE TABLE IF NOT EXISTS student_favourites(id INT AUTO_INCREMENT PRIMARY KEY,student_id INT NOT NULL,scholarship_id INT NOT NULL,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,UNIQUE KEY unique_favourite(student_id,scholarship_id),CONSTRAINT fk_fav_student FOREIGN KEY(student_id) REFERENCES students(id) ON DELETE CASCADE,CONSTRAINT fk_fav_scholarship FOREIGN KEY(scholarship_id) REFERENCES scholarships(id) ON DELETE CASCADE);
