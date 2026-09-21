@@ -1,26 +1,78 @@
-SCHOLARCONNECT FINAL PHP + MYSQL VERSION
+# ScholarConnect – PHP + MySQL Scholarship Portal
 
-RUN ON MAC/XAMPP:
-1. Copy ScholarConnect_Backend_Final into /Applications/XAMPP/htdocs/
-2. Open XAMPP and start Apache AND MySQL.
-3. Open http://localhost/ScholarConnect_Backend_Final/setup.php once.
-4. Click Open ScholarConnect Pro.
-5. Use http://localhost/ScholarConnect_Backend_Final/ for future demos.
+ScholarConnect is a Maharashtra scholarship portal designed to help students
+explore scholarships and check their eligibility.
 
-ADMIN (kept hidden from the page):
-Email: admin@scholarconnect.local
-Password: admin123
+## Technology Used
 
-Backend functions:
-- Student register/login stored in MySQL
-- Admin authentication stored in MySQL
-- 28 scholarship records stored in MySQL
-- Search/filter reads database
-- Admin add/edit/delete scholarships
-- Contact messages stored in MySQL and visible to Admin
+- PHP
+- MySQL
+- HTML5
+- CSS3
+- JavaScript
+- XAMPP
 
-No scholarship application process is included.
-Official portal: https://mahadbt.maharashtra.gov.in/
+## Main Features
 
-If your MySQL root account has a password, change $pass in includes/db.php and setup.php.
-After setup, delete setup.php for the final demo folder.
+- Student registration and login
+- Scholarship search and filtering
+- Eligibility Checker
+- Save/Favourite scholarships
+- Student Dashboard
+- Scholarship deadline tracking
+- Open / Closing Soon / Closed status
+- Required document checklist
+- Scholarship alerts
+- Admin authentication
+- Admin scholarship management
+- Add, edit and delete scholarships
+- Contact messages for administrators
+- 28 scholarship records
+- Official scholarship website links
+
+## Important
+
+ScholarConnect does **not** provide scholarship application submission.
+
+It helps students explore scholarships and check their eligibility.
+
+Official Maharashtra scholarship portal:
+
+https://mahadbt.maharashtra.gov.in/
+
+## Run Locally on Mac / XAMPP
+
+1. Copy the project folder into:
+
+   `/Applications/XAMPP/htdocs/`
+
+2. Start **Apache** and **MySQL** from XAMPP.
+
+3. Open:
+
+   `http://localhost/Scholar_Connect/`
+
+4. Make sure the local MySQL database is configured in:
+
+   `includes/db.php`
+
+## Database
+
+The project uses MySQL to store:
+
+- Students
+- Administrators
+- Scholarships
+- Contact messages
+- Favourite scholarships
+
+The scholarship table also contains deadline and required-document
+information.
+
+## Security
+
+Do not upload real database passwords or administrator credentials
+to a public repository.
+
+For the live deployment, configure the database connection separately
+using the hosting provider's database credentials.
