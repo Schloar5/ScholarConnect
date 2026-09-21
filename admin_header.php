@@ -1,2 +1,0 @@
-<?php $adminPage=basename($_SERVER['PHP_SELF']); ?>
-<nav class="navbar"><a class="brand" href="../index.php"><img src="../logo.png" alt="ScholarConnect Pro"></a><div class="nav-links"><a href="../index.php">View Site</a><a class="<?= $adminPage==='index.php'?'active':'' ?>" href="index.php">Dashboard</a><a class="<?= in_array($adminPage,['scholarships.php','scholarship-form.php'])?'active':'' ?>" href="scholarships.php">Scholarships</a><a class="<?= $adminPage==='messages.php'?'active':'' ?>" href="messages.php">Messages</a><a href="../logout.php">Logout</a></div></nav>
