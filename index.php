@@ -1,8 +1,0 @@
-<?php require_once '../includes/auth.php';adminOnly();require '../includes/db.php';$s=$pdo->query('SELECT COUNT(*) FROM scholarships')->fetchColumn();$u=$pdo->query('SELECT COUNT(*) FROM students')->fetchColumn();$m=$pdo->query('SELECT COUNT(*) FROM contact_messages')->fetchColumn();?>
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard | ScholarConnect Pro</title><link rel="stylesheet" href="../css/style.css"></head><body>
-<?php include '../includes/admin_header.php';?>
-<main class="admin-dashboard">
-<div class="admin-title"><div><span class="eyebrow">CONTROL CENTER</span><h1>Admin Dashboard</h1><p class="muted">Manage ScholarConnect Pro records from one place.</p></div><a class="btn btn-primary" href="scholarship-form.php"><span class="icon">＋</span> Add Scholarship</a></div>
-<div class="admin-stats"><div><strong><?=$s?></strong><span>Scholarships</span></div><div><strong><?=$u?></strong><span>Registered Students</span></div><div><strong><?=$m?></strong><span>Contact Messages</span></div></div>
-<div class="admin-panel"><div class="section-heading"><div><span class="eyebrow">QUICK ACTIONS</span><h2>Management</h2></div></div><p><a class="btn btn-light" href="scholarships.php">🎓 Manage Scholarships</a> <a class="btn btn-light" href="messages.php">✉ View Contact Messages</a></p></div>
-</main></body></html>
